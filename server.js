@@ -36,7 +36,7 @@ app.post('/validateUser', (req, res) => {
     }
 });
 
-app.get('/prueba', (req, res) => {
+app.post('/prueba', (req, res) => {
   res.json({ username: 'richaldo', password: '12345678', wallet: '1234' });
 });
 
