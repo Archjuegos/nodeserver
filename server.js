@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const PORT = 443;
 
 // Middleware para procesar datos en formato JSON
 app.use(express.json());
@@ -42,5 +42,5 @@ app.post('/prueba', (req, res) => {
 
 // Iniciar el servidor
 app.listen(PORT, () => {
-  console.log('Servidor escuchando en el puerto ${PORT}');
+  console.log('Servidor escuchando en el puerto '+PORT);
 });
