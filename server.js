@@ -15,7 +15,7 @@ app.post('/validateToken', (req, res) => {
     const tokenCrypto = req.body.tokenCrypto; // Obtener el parámetro tokenCrypto del cuerpo de la solicitud
     
     if (tokenCrypto === 'abcd1234') { // Comprobar si el tokenCrypto es igual a '1234'
-        res.json({ username: 'Richaldo', wallet: '1234' });
+        res.json({ username: 'Richard', wallet: '1234' });
     } else if(tokenCrypto === 'efgh5678') {
         res.json({ username: 'Vrowinaldo', wallet: '5678' });
     } 
@@ -39,7 +39,7 @@ app.post('/validateUser', (req, res) => {
     const username = req.body.username;
 	const password = req.body.password;
     
-    if (username === 'Richaldo' && password === '12345678') { // Comprobar si el tokenCrypto es igual a '1234'
+    if (username === 'Richard' && password === '12345678') { // Comprobar si el tokenCrypto es igual a '1234'
         res.json({ user: 'okay'});
     } else if(username === 'Vrowinaldo' && password === '12345678') {
         res.json({ user: 'okay'});
