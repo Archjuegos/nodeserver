@@ -32,6 +32,10 @@ app.post('/validateToken', (req, res) => {
         res.json({ username: 'Testing4', wallet: '3456' });
     } else if(tokenCrypto === 'yzab7890') {
         res.json({ username: 'Testing5', wallet: '7890' });
+    }  else if(tokenCrypto === 'cdef1234') {
+        res.json({ username: 'Raul', wallet: '0123' });
+    }  else if(tokenCrypto === 'ghij5678') {
+        res.json({ username: 'Mario', wallet: '4467' });
     } else {
         res.status(401).json({ message: 'Token inválido' }); // Devolver un error 401 si el token es inválido
     }
@@ -54,6 +58,10 @@ app.post('/validateUser', (req, res) => {
     } else if(username === 'Testing4' && password === '123456') {
         res.json({ user: 'okay'});
     } else if(username === 'Testing5' && password === '123456') {
+        res.json({ user: 'okay'});
+    }  else if(username === 'Raul' && password === '123456') {
+        res.json({ user: 'okay'});
+    }  else if(username === 'Mario' && password === '123456') {
         res.json({ user: 'okay'});
     } else {
         res.status(401).json({ message: 'Usuario incorrecto' }); // Devolver un error 401 si el token es inválido
